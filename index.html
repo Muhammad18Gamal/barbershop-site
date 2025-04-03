@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صالون الحلاقة الفاخر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>صالون الحلاقة الفاخر</h1>
+        <p>تجربة فريدة لعناية كاملة بالشعر والذقن</p>
+    </header>
+    
+    <div class="container">
+        <!-- خدمة قص الشعر -->
+        <div class="service-card" id="haircut-service">
+            <h2 class="service-title">قص الشعر</h2>
+            <p>أفضل خدمات قص الشعر بأحدث الأدوات والأساليب العصرية من قبل خبراء الحلاقة.</p>
+            <div class="service-price">السعر: 80 جنيهاً</div>
+            
+            <div class="gallery">
+                <img src="https://via.placeholder.com/150?text=قص+الشعر+1" alt="قصات الشعر 1">
+                <img src="https://via.placeholder.com/150?text=قص+الشعر+2" alt="قصات الشعر 2">
+                <img src="https://via.placeholder.com/150?text=قص+الشعر+3" alt="قصات الشعر 3">
+            </div>
+            
+            <div class="booking-form" id="booking-form">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" placeholder="أدخل اسمك" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" placeholder="أدخل رقم هاتفك" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="datetime">تاريخ ووقت الحجز:</label>
+                    <input type="datetime-local" id="datetime" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="barber">اختر الحلاق:</label>
+                    <select id="barber" required>
+                        <option value="">-- اختر الحلاق --</option>
+                        <option value="أحمد">أحمد (خبير قصات كلاسيكية)</option>
+                        <option value="محمد">محمد (متخصص في القصات الحديثة)</option>
+                        <option value="علي">علي (خبير تصفيف شعر)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="blowdry"> 
+                        إضافة خدمة استشوار (+20 جنيهاً)
+                    </label>
+                </div>
+                
+                <button onclick="bookService('قص الشعر')">تأكيد الحجز</button>
+            </div>
+        </div>
+        
+        <!-- خيارات الدفع -->
+        <div class="payment-options" id="payment-options">
+            <h3>اختر طريقة الدفع:</h3>
+            <p>لضمان حجزك، يرجى اختيار طريقة الدفع المفضلة لديك:</p>
+            
+            <div class="payment-buttons">
+                <button onclick="confirmPayment('إنستا باي')">💳 إنستا باي</button>
+                <button onclick="confirmPayment('فودافون كاش')">📱 فودافون كاش</button>
+                <button onclick="confirmPayment('الدفع في الصالون')">💵 الدفع في الصالون</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 صالون الحلاقة الفاخر - جميع الحقوق محفوظة</p>
+        <p>العنوان: شارع النخيل، مدينة نصر، القاهرة | الهاتف: 01234567890</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
